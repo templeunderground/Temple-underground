@@ -3,24 +3,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Underground</title>
-  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      background: url('philly-nightlife.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+    header {
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      font-size: 2em;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .section {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .ticket-button {
+      background: #e6007e;
+      color: white;
+      padding: 15px 25px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .flyers img {
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1 class="glow">Temple Underground</h1>
-  </header>
-  <audio id="musicPlayer" autoplay loop muted>
-    <source src="music/party1.mp3" type="audio/mpeg">
-  </audio>
-  <div class="tickets">
-    <a class="ticket-button" href="early.html">🎟 Early Bird</a>
-    <a class="ticket-button" href="justintime.html">🕒 Just in Time</a>
-    <a class="ticket-button" href="late.html">🚪 Late Entry</a>
+  <header>Temple Underground</header>
+
+  <div class="section">
+    <h2>Tickets to Upcoming Parties/Concerts</h2>
+    <a class="ticket-button" href="https://square.link/u/EIUrzoRh" target="_blank">🎟️ Early Bird - $10</a>
+    <a class="ticket-button" href="https://square.link/u/DXH3H5kq" target="_blank">⏰ Just in Time - $20</a>
+    <a class="ticket-button" href="https://square.link/u/2YvvA0lm" target="_blank">🚪 Late Entry - $30</a>
   </div>
-  <footer>
-    <p>Contact us on <a href="https://instagram.com/templeunderground" target="_blank">Instagram</a></p>
-  </footer>
+
+  <div class="section flyers">
+    <h2>Past Underground Events</h2>
+    <img src="flyer1.jpg" alt="Flyer 1">
+    <img src="flyer2.jpg" alt="Flyer 2">
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="uzi-quanny-shuffle.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="section">
+    <p>Follow us: <a href="https://instagram.com/templeunderground" target="_blank" style="color:#e6007e;">@templeunderground</a></p>
+  </div>
 </body>
 </html>
