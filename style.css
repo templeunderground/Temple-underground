@@ -1,46 +1,51 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Arial', sans-serif;
-  background: radial-gradient(circle at center, #111 0%, #000 100%);
-  color: white;
-  text-align: center;
+  color: #fff;
+  background: #0d0d0d url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 header {
-  background-color: #1a1a1a;
-  padding: 20px;
-  font-size: 24px;
-  color: #f50057;
-  animation: glow 2s infinite alternate;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero {
-  padding: 50px 20px;
-  background: url('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif') center/cover no-repeat;
+.glow {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+}
+
+.tickets {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.ticket-button, .buy-button, .back-button {
+  background-color: #ff0080;
   color: white;
-  text-shadow: 0 0 10px black;
-}
-
-.ticket-tier {
-  background-color: #222;
-  padding: 15px;
-  margin: 10px;
-  border: 1px solid #f50057;
-  border-radius: 10px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: #f50057;
-  color: white;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
+  border: none;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
 
-@keyframes glow {
-  from { text-shadow: 0 0 5px #f50057; }
-  to { text-shadow: 0 0 20px #f50057; }
+.ticket-button:hover, .buy-button:hover, .back-button:hover {
+  background-color: #e60073;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }

@@ -1,34 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Temple Underground</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <h1>Temple Underground</h1>
+    <h1 class="glow">Temple Underground</h1>
   </header>
-
-  <section class="hero">
-    <h2>Welcome to the Party</h2>
-    <p>Philly's hottest college parties & concerts</p>
-    <a href="#tickets" class="btn">Get Tickets</a>
-  </section>
-
-  <section id="tickets">
-    <h2>Tickets to Upcoming Events</h2>
-    <div class="ticket-tier">🎟️ Early Bird Tickets</div>
-    <div class="ticket-tier">⏰ Just in Time Tickets</div>
-    <div class="ticket-tier">🔥 Last Minute - Late Entry</div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>DM us on <a href="https://instagram.com/templeunderground" target="_blank">Instagram</a></p>
-  </section>
-
-  <script src="script.js"></script>
+  <audio id="musicPlayer" autoplay loop muted>
+    <source src="music/party1.mp3" type="audio/mpeg">
+  </audio>
+  <div class="tickets">
+    <a class="ticket-button" href="early.html">🎟 Early Bird</a>
+    <a class="ticket-button" href="justintime.html">🕒 Just in Time</a>
+    <a class="ticket-button" href="late.html">🚪 Late Entry</a>
+  </div>
+  <footer>
+    <p>Contact us on <a href="https://instagram.com/templeunderground" target="_blank">Instagram</a></p>
+  </footer>
 </body>
 </html>
