@@ -5,75 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Temple Underground</title>
-  <style>
-    body {
-      margin: 0;
-      background: url('philly-nightlife.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-    }
-    header {
-      background: rgba(0,0,0,0.8);
-      padding: 20px;
-      font-size: 2em;
-      animation: fadeIn 2s ease-in-out;
-    }
-    .section {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: rgba(0,0,0,0.6);
-    }
-    .ticket-button {
-      background: #e6007e;
-      color: white;
-      padding: 15px 25px;
-      margin: 10px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      display: inline-block;
-    }
-    .flyers img {
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-      border: 2px solid white;
-    }
-    audio {
-      display: block;
-      margin: 20px auto;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>Temple Underground</header>
-
-  <div class="section">
-    <h2>Tickets to Upcoming Parties/Concerts</h2>
-    <a class="ticket-button" href="https://square.link/u/EIUrzoRh" target="_blank">🎟️ Early Bird - $10</a>
-    <a class="ticket-button" href="https://square.link/u/DXH3H5kq" target="_blank">⏰ Just in Time - $20</a>
-    <a class="ticket-button" href="https://square.link/u/2YvvA0lm" target="_blank">🚪 Late Entry - $30</a>
-  </div>
-
-  <div class="section flyers">
+  <header>
+    <h1>TEMPLE UNDERGROUND</h1>
+    <nav>
+      <a href="early-bird.html">Early Bird</a>
+      <a href="just-in-time.html">Just in Time</a>
+      <a href="late-entry.html">Late Entry</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Welcome to Temple's Hottest College Parties</h2>
+    <a href="#tickets" class="cta-button">Buy Tickets</a>
+  </section>
+  <section id="past-events">
     <h2>Past Underground Events</h2>
-    <img src="flyer1.jpg" alt="Flyer 1">
-    <img src="flyer2.jpg" alt="Flyer 2">
-  </div>
-
-  <audio controls autoplay loop>
-    <source src="uzi-quanny-shuffle.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    <div class="flyers">
+      <img src="flyer1.jpg" alt="Event Flyer 1" />
+      <img src="flyer2.jpg" alt="Event Flyer 2" />
+    </div>
+  </section>
+  <footer>
+    <p>Follow us on <a href="https://instagram.com/templeunderground">Instagram</a></p>
+  </footer>
+  <audio autoplay loop>
+    <source src="uzi_quanny_mix.mp3" type="audio/mpeg">
   </audio>
-
-  <div class="section">
-    <p>Follow us: <a href="https://instagram.com/templeunderground" target="_blank" style="color:#e6007e;">@templeunderground</a></p>
-  </div>
 </body>
 </html>

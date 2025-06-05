@@ -1,51 +1,49 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Arial', sans-serif;
-  color: #fff;
-  background: #0d0d0d url('bg.jpg') no-repeat center center fixed;
+  background: url('philly-night.jpg') no-repeat center center fixed;
   background-size: cover;
+  color: white;
 }
 
 header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
   text-align: center;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.glow {
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
 }
 
-.tickets {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
 }
 
-.ticket-button, .buy-button, .back-button {
-  background-color: #ff0080;
+.cta-button {
+  background: #ff0055;
   color: white;
   padding: 1rem 2rem;
-  border: none;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
-.ticket-button:hover, .buy-button:hover, .back-button:hover {
-  background-color: #e60073;
+#past-events {
+  padding: 2rem;
+}
+
+.flyers img {
+  width: 200px;
+  margin: 1rem;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #1a1a1a;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  padding: 2rem;
+  background: rgba(0,0,0,0.7);
 }
